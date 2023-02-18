@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/icon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Apps</title>
+    <link rel="stylesheet" href="css/style0.css">
+    <link rel="stylesheet" href="css/style1.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Todos List
+        <button class="setting-button" onclick="apps.settingDisplay();"></button>
+      </h1>
+      <div class="kotakcari">
+        <form class="form" action="#" id="formpencarian">
+          <input type="text" id="cari" name="cari" required
+            placeholder="Pencaharian..">
+        </form>
+      </div>
+
+    </header>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2 class="text-center">Tambah Daftar Buku</h2>
+        <form class="form" id="forminputdata">
+          <div class="form-group form-title">
+            <label for="title">Judul Tugas</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+          <div class="form-group form-title">
+            <label for="matkul">MataKuliah</label>
+            <!-- <input type="text" id="matkul" name="matkul" required> -->
+            <select name="matkul" id="matkul">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <div class="form-group form-title">
+            <label for="detail">Detail</label>
+            <textarea id="detail" name="detail"></textarea>
+          </div>
+          <div class="form-group form-title">
+            <label for="date">Deat Line</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group form-title check">
+            <label for="complet">Selesai Dibaca</label>
+            <input type="checkbox" id="complet" name="complet">
+          </div>
+          <input type="submit" value="Submit" name="Submit"
+            class="btn-submit">
+        </form>
+      </div>
+      <!-- ===================== -->
+      <div class="container">
+        <h2 class="container-header">Belum selesai dibaca</h2>
+        <div class="list-item" id="todo1">
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="container-header">Selesai Dibaca</h2>
+        <div class="list-item" id="todo2">
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="container-header">Sudah Deadline</h2>
+        <div class="list-item" id="todo3">
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+    <div class="popup">
+      <div class="kotak pop text-center none" id="peringatan">
+        <img src="assets/warning1.svg" alt="peringatan"
+          class="pop-icon">
+        <h1>Warning!!</h1>
+        <div id="confirm-mess">apakah anda yakin akan menghapus task matakuliah
+          agama 2</div>
+        <div class="pop-btn">
+          <button class="btn-red" id="btn1">YA</button>
+          <button class="btn-blue" id="btn2">TIDAK</button>
+        </div>
+      </div>
+    </div>
+    <!-- end popup -->
+    <script src="js/script0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/script1.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+
+</html>

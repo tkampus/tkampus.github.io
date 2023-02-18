@@ -1,0 +1,47 @@
+.popup{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.none{
+   display: none;
+}
+.kotak {
+   background: #f2f6ea;
+   border-radius: 30px;
+   border: solid 2px #9c86da;
+   box-shadow: 0 5px 10px rgba(140, 155, 214, 0.5), 0 15px 40px rgba(110, 126, 188, 0.7);
+}
+.pop{
+   width: 600px;
+   padding: 60px 0px;
+   z-index: 999;
+}
+.pop-btn{
+   margin-top: 30px;
+}
+.pop-btn button{
+   width: 100px;
+   height: 35px;
+   margin: 0px 40px;
+   border-radius: 10px;
+}
+.btn-red{
+   background-color: #f57878;
+   border: 2px solid #ff0000;
+}
+.btn-red:hover{
+   background-color: #ff0000;
+}
+.btn-blue {
+   background-color: #78b2f5;
+   border: 2px solid #0077ff;
+}
+
+.btn-blue:hover {
+   background-color: #0077ff;
+}
+.pop-icon{
+   width: 120px;
+}
