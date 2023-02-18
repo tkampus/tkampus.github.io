@@ -127,11 +127,12 @@ const apps = {
 		this.refresDisplay(this.basedata);
 	},
 	hapusTodo(i){
-		alertPop();
-		this.basedata.splice(i, 1);
-		this.setDatabase();
-		this.refresDisplay(this.basedata);
-		console.log(i);
+		if(confirm(`Menghapus tugas${this.basedata[i].title}?`)){
+			this.basedata.splice(i, 1);
+			this.setDatabase();
+			this.refresDisplay(this.basedata);
+			console.log(i);
+		}
 	},
 	caritodo(cari){
 		let hasil = [];
