@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="assets/icon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas Kampus</title>
+    <title>Todos Apps</title>
     <link rel="stylesheet" href="css/style0.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/settingan.css">
   </head>
 
   <body>
     <header>
-      <h1>Todos List
-        <button class="setting-button" onclick="apps.settingDisplay();"></button>
+      <h1>Tasks List
+        <button class="setting-button" id="dis-setting"></button>
       </h1>
       <div class="kotakcari">
         <form class="form" action="#" id="formpencarian">
@@ -33,13 +35,13 @@
             <input type="text" id="title" name="title" required>
           </div>
           <div class="form-group form-title">
-            <label for="matkul">MataKuliah</label>
+            <label for="matkul">Kategori/MataKuliah</label>
             <!-- <input type="text" id="matkul" name="matkul" required> -->
             <select name="matkul" id="matkul">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="fiat">Fiat</option>
-              <option value="audi">Audi</option>
+              <option value="Umum">Umum</option>
+              <option value="Pribadi">Pribadi</option>
+              <option value="Kuliah">Kuliah</option>
+              <option value="Keluarga">Keluarga</option>
             </select>
           </div>
           <div class="form-group form-title">
@@ -76,7 +78,88 @@
         </div>
       </div>
     </div>
-    <script src="js/script0.js" type="text/javascript" charset="utf-8"></script>
+    <!-- setting -->
+    <div id="settingssett" class="sett">
+      <div class="sett-content">
+        <div class="sett-head">
+          <div class="sett-header">
+            <button class="close-button" onclick="sett.cleardisplay()">&times;</button>
+          </div>
+          <div>
+            <ul class="sett-menu">
+              <li class="active"><a href="#">About</a></li>
+              <li><a href="#">Notifikasi</a></li>
+              <li><a href="#">Config</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sett-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Impedit quia, assumenda unde sit expedita nihil odio quod non
+            culpa amet, vero facere aperiam voluptatem aliquid iste
+            doloribus veritatis quisquam aliquam iusto maiores! Vitae
+            reiciendis recusandae impedit, autem perferendis nostrum
+            nobis, placeat repellendus non saepe omnis nisi eveniet.
+            Assumenda itaque vero nam incidunt eum placeat vel, deleniti
+            provident esse, ex, quibusdam necessitatibus pariatur
+            repellendus! Numquam, ab id, aperiam officia porro saepe
+            adipisci temporibus mollitia, asperiores reiciendis esse
+            excepturi suscipit laborum est aliquid ipsa eveniet tenetur
+            nostrum! Nulla numquam, consequatur rem suscipit facere
+            deleniti architecto praesentium animi repudiandae atque, modi
+            facilis! Sequi?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Impedit quia, assumenda unde sit expedita nihil odio quod non
+            culpa amet, vero facere aperiam voluptatem aliquid iste
+            doloribus veritatis quisquam aliquam iusto maiores! Vitae
+            reiciendis recusandae impedit, autem perferendis nostrum
+            nobis, placeat repellendus non saepe omnis nisi eveniet.
+            Assumenda itaque vero nam incidunt eum placeat vel, deleniti
+            provident esse, ex, quibusdam necessitatibus pariatur
+            repellendus! Numquam, ab id, aperiam officia porro saepe
+            adipisci temporibus mollitia, asperiores reiciendis esse
+            excepturi suscipit laborum est aliquid ipsa eveniet tenetur
+            nostrum! Nulla numquam, consequatur rem suscipit facere
+            deleniti architecto praesentium animi repudiandae atque, modi
+            facilis! Sequi?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Impedit quia, assumenda unde sit expedita nihil odio quod non
+            culpa amet, vero facere aperiam voluptatem aliquid iste
+            doloribus veritatis quisquam aliquam iusto maiores! Vitae
+            reiciendis recusandae impedit, autem perferendis nostrum
+            nobis, placeat repellendus non saepe omnis nisi eveniet.
+            Assumenda itaque vero nam incidunt eum placeat vel, deleniti
+            provident esse, ex, quibusdam necessitatibus pariatur
+            repellendus! Numquam, ab id, aperiam officia porro saepe
+            adipisci temporibus mollitia, asperiores reiciendis esse
+            excepturi suscipit laborum est aliquid ipsa eveniet tenetur
+            nostrum! Nulla numquam, consequatur rem suscipit facere
+            deleniti architecto praesentium animi repudiandae atque, modi
+            facilis! Sequi?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Impedit quia, assumenda unde sit expedita nihil odio quod non
+            culpa amet, vero facere aperiam voluptatem aliquid iste
+            doloribus veritatis quisquam aliquam iusto maiores! Vitae
+            reiciendis recusandae impedit, autem perferendis nostrum
+            nobis, placeat repellendus non saepe omnis nisi eveniet.
+            Assumenda itaque vero nam incidunt eum placeat vel, deleniti
+            provident esse, ex, quibusdam necessitatibus pariatur
+            repellendus! Numquam, ab id, aperiam officia porro saepe
+            adipisci temporibus mollitia, asperiores reiciendis esse
+            excepturi suscipit laborum est aliquid ipsa eveniet tenetur
+            nostrum! Nulla numquam, consequatur rem suscipit facere
+            deleniti architecto praesentium animi repudiandae atque, modi
+            facilis! Sequi?</p>
+        </div>
+      </div>
+    </div>
+    <!-- end popup -->
+    <script src="js/model.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/database.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/setting.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/popup.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/todo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/apps.js" type="text/javascript" charset="utf-8"></script>
   </body>
 
 </html>
